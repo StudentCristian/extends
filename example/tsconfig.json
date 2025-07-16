@@ -1,0 +1,20 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "../", // Cambiar de "." a "../" para incluir todo el proyecto
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ES2020",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "strict": true,
+        "paths": {
+            "@util/*": ["../src/util/*"]
+        }
+    },
+    "include": [
+        "./**/*.ts",
+        "../src/**/*.ts" // Incluir los archivos del directorio src
+    ]
+}
